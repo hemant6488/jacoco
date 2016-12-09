@@ -86,6 +86,7 @@ case "$JDK" in
   ;;
 9-ea | 9-ea-stable)
   # see https://bugs.openjdk.java.net/browse/JDK-8131041 about "java.locale.providers"
+  MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED" \
   mvn -V -B -e verify -Dbytecode.version=1.9 \
     -DargLine=-Djava.locale.providers=JRE,SPI
   ;;
