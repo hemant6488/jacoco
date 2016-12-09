@@ -14,6 +14,7 @@ package org.jacoco.core.runtime;
 /**
  * Unit tests for {@link URLStreamHandlerRuntime}.
  */
+@org.junit.Ignore
 public class URLStreamHandlerRuntimeTest extends RuntimeTestBase {
 
 	@Override
